@@ -1,0 +1,99 @@
+/*
+Dribbble Follow Button by @thomweerd.
+Free to use and abuse.
+*/
+
+.dribbble-follow-button {
+	display: inline-block;
+}
+
+.dribbble-follow-button .label, .dribbble-follow-button .count {
+    font: bold 11px/18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+         -o-border-radius: 3px;
+            border-radius: 3px;
+
+	-webkit-font-smoothing: subpixel-antialiased;
+	   -moz-font-smoothing: subpixel-antialiased;
+	        font-smoothing: subpixel-antialiased;
+}
+
+.dribbble-follow-button .label {
+    padding: 0 3px 0 1px;
+    white-space: nowrap;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    background: #f8f8f8;
+    
+    background: -webkit-linear-gradient(left top, left bottom, from(white), to(#dedede));
+    background: -webkit-linear-gradient(top, white, #dedede);
+       background: -moz-linear-gradient(top, white, #dedede);
+         background: -o-linear-gradient(top, white, #dedede);
+            background: linear-gradient(top, white, #dedede);
+}
+
+.dribbble-follow-button .label i {
+    height: 18px;
+    width: 18px;
+    float: left;
+    background: url(icon.png) no-repeat top left;
+}
+
+.dribbble-follow-button .label:hover {
+    border-color: #bbb;
+    background: #f8f8f8;
+    
+    background: -webkit-linear-gradient(left top, left bottom, from(#f8f8f8), to(#dbdbdb));
+    background: -webkit-linear-gradient(top, #f8f8f8, #dbdbdb);
+       background: -moz-linear-gradient(top, #f8f8f8, #dbdbdb);
+         background: -o-linear-gradient(top, #f8f8f8, #dbdbdb);
+            background: linear-gradient(top, #f8f8f8, #dbdbdb);
+}
+
+.dribbble-follow-button .label:active {            
+	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,.15) inset;
+	   -moz-box-shadow: 0 1px 5px rgba(0,0,0,.15) inset;
+	     -o-box-shadow: 0 1px 5px rgba(0,0,0,.15) inset;
+	        box-shadow: 0 1px 5px rgba(0,0,0,.15) inset;
+}
+
+.dribbble-follow-button .count {
+    margin-left: 5px;
+    padding: 0 3px;
+    color: #333;
+    border-color: #bbb;
+    font-weight: normal;
+    background: white;
+}
+
+.dribbble-follow-button .count:hover {
+    text-decoration: underline;
+}
+
+.dribbble-follow-button .count > * {
+	top: 50%;
+	left: 0;
+	margin: -4px 0 0 -4px;
+	border: 4px solid transparent;
+	border-right-color: #aaa;
+	border-left: 0;
+	position: absolute;
+}
+
+.dribbble-follow-button .count u {
+    margin-left: -3px;
+    border-right-color: white;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.dribbble-follow-button .label i {
+		background-position: top right;
+		background-size: 37px 18px;
+	}
+}
